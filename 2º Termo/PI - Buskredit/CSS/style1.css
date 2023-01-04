@@ -1,0 +1,505 @@
+/*--------Corpo--------*/
+body{
+    background-color: #1368D6;
+}
+
+.container{
+    padding: 10px;
+    width: 100%; /* esta forçando todo o conteudo máx a esque e dire*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+table tr {
+    border-bottom: solid white 3px; /*Distancia entre tr*/
+}
+
+table tr td:not(:last-child) {
+    padding: 1px 0 1px 1px; /*Retirar padding a direita da td, exceto da última para não criar colapso de bordas*/
+}
+table tr td span {
+    display:block;
+    background-color:white;
+    padding:5px 5px 0 5px;
+}
+table tr:nth-child(even) td span {
+    background-color:#ccc; /*Se desejar alternar cores das linhas*/
+}
+
+
+
+/*--------Cabeçalho--------*/
+
+header{
+    background: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 65px;
+    justify-items: center;
+}
+header .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .flex-box .logo img{
+    display: flex;
+    height: 50px;
+
+}
+header .flex-box .botaoLogin{
+    display: flex;
+    border: 1px solid #1368D6;
+    background-color: #0759c3;
+    height: 35px;
+    width: 75px;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+header .flex-box .aumentar .botaoLogin{
+    width: 100px;
+}
+
+header .flex-box .botaoLogin:hover{
+    background: #ffffff;
+    border-color: #000080;
+    color: #1368D6;
+    border: 2px solid
+}
+
+
+
+
+
+
+/*----------- Títulos ------------*/
+
+.titulo{
+    font-family: Poppins;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+
+.titulo.um{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.titulo.dois{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.titulo.tres{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.titulo.quatro{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.paragrafo{
+    font-family: Poppins;
+    color: #FFFFFF;
+    line-height: 1.1;
+    font-size: 15px;
+}
+
+
+.rodape{
+    color: #1368D6;
+}
+
+.verde{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #07c368;
+    border-radius: 30px;
+}
+
+.vermelho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ce543f;
+    border-radius: 30px;
+}
+
+.amarelo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdc307;
+    border-radius: 30px;
+}
+
+.verde.legenda{
+    height: 35px;
+    width: 300px;
+}
+
+.vermelho.legenda{
+    height: 35px;
+    width: 300px;
+}
+.amarelo.legenda{
+    height: 35px;
+    width: 300px;
+}
+
+.pd50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pd5{
+    padding-bottom: 5px;
+}
+
+
+
+/*----------- Botões ------------*/
+
+.botao{
+    display: flex;
+    border: 1px solid #1368D6;
+    background-color: #FFFFFF;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    color:  #1368D6;
+    font-size: 25px;
+    font-weight: 500px;
+    height: 75px;
+    width: 300px;
+}
+
+.botao:hover{
+    border: 2px solid #FFFFFF;
+    background-color: #1368D6;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/*----------- Estilizações ------------*/
+
+#home .flex-box #titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 170px;
+
+}
+#home .flex-box #titulo img{
+    height: 250px;
+}
+
+#home .flex-box #titulo .funtions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+#sobre .flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-bottom: 100px;
+}
+#sobre .flex-box .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#faleconosco .flex-box img{
+    height: 25px;
+}
+
+footer{
+    background-color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0;
+}
+#faleconosco .flex-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+#faleconosco .container{
+    padding: 0px;
+}
+#horarios .flex-box .selecao select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 225px;
+    border: 2px solid #FFFFFF;
+    height: 75px;   
+    color: #FFFFFF;
+    background-color: #1368D6;
+    width: 200px;
+    padding-left: 25px;
+}
+
+
+#horarios .flex-box .selecao{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#horarios .flex-box h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+#horarios .flex-box .alinhar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#horarios .flex-box button{
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+}
+
+.alinhar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#horarios2 .flex-box .mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#informacoes .flex-box .saldo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 400px;
+    gap: 10px;
+    border-radius: 50px;
+}
+
+#informacoes .flex-box .saldo h2{
+    color: #1368D6;
+}
+
+#informacoes .flex-box .saldo h3{
+    color: #1368D6;
+}
+
+#informacoes .flex-box .alinhar .tabela tr{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 20px;
+}
+
+#informacoes .flex-box .tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 250px;
+    width: 600px;
+    gap: 10px;
+    border-radius: 50px;
+}
+
+#informacoes .flex-box .tabela h1{
+    color: #1368D6;
+}
+
+#informacoes .flex-box .tabela tr{
+    color: #1368D6;
+}
+
+#informacoes .flex-box .alinhar .tabela .espacar{
+    padding-bottom: 10px;
+}
+
+.tabela2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 650px;
+    width: 900px;
+    gap: 10px;
+    border-radius: 50px;
+}
+
+header .flex-box .right .aumentar a{
+    width: 100px;
+}
+
+#horarios .flex-box .titulo.dois h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#horarios .flex-box .tabela{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+#horarios .flex-box .alinha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    gap: 50px;
+    
+}
+
+#horarios .flex-box .alinha .right .legenda{
+    display: flex;
+    flex-direction: column;
+}
+
+#normas .flex-box #recarga .left{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#normas .flex-box #recarga .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 300px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+#normas .flex-box #recarga .right .options select{
+    border: 2px solid #1368D6;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+#normas .flex-box #recarga .right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1368D6;
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;  
+    transition: 0.4s;
+}
+
+#normas .flex-box #recarga .right a:hover{
+    background-color: #5984bd;
+    border: 2px solid #1368D6;
+}
+
+#recarga{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#recarga2 .flex-box .tabela{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#recarga2 .flex-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+#recarga2 .flex-box .pix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 60px;
+}
+
+.qrcode{
+    background-color: #FFFFFF;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#recarga2 .flex-box .pix .right .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+#recarga2 .flex-box .pix .right .titulo h4{
+    background-color: #000080;
+}
