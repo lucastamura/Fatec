@@ -1,0 +1,3 @@
+import pandas as pd
+arquivodf = pd.read_csv('dados_estacao.csv', sep = ';')
+print(arquivodf)
